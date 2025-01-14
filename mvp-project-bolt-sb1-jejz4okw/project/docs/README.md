@@ -4,130 +4,187 @@
 
 O MVP Factory é uma plataforma inovadora projetada para revolucionar o processo de desenvolvimento de MVPs (Minimum Viable Products) através da integração de múltiplos modelos de Inteligência Artificial. A plataforma oferece uma abordagem única que combina metodologias ágeis, design thinking e uma equipe virtual de IAs especializadas para acelerar e otimizar o processo de desenvolvimento.
 
-## Conceito de Projetos
+## Arquitetura do Sistema
 
-### Estrutura de Projetos
-Um projeto no MVP Factory é uma unidade completa de trabalho que passa por diferentes estágios de maturidade, cada um com objetivos específicos e entregáveis definidos.
+### 1. Frontend
+- **Framework**: React + TypeScript
+- **Estilização**: Tailwind CSS
+- **Gerenciamento de Estado**: Hooks personalizados
+- **Persistência**: IndexedDB (idb)
+- **Ícones**: Lucide React
 
-#### Estágios do Projeto
+### 2. Integrações de IA
+- OpenAI gpt-4-o-mini
+- Suporte planejado para Anthropic, Google Gemini e Groq
+
+### 3. Armazenamento
+- IndexedDB para persistência local
+- Sistema de arquivos virtual para projetos
+
+## Componentes Principais
+
+### 1. Arquiteto AI
+O Arquiteto AI é o componente central da plataforma, responsável por:
+
+#### Análise e Planejamento
+- Compreensão profunda do problema
+- Identificação de requisitos
+- Avaliação de riscos e oportunidades
+- Definição de estratégias
+
+#### Gestão de Equipe AI
+- Seleção de agentes especializados
+- Definição de papéis
+- Coordenação de interações
+- Resolução de conflitos
+
+#### Supervisão Técnica
+- Revisão de entregas
+- Garantia de qualidade
+- Orientação técnica
+- Documentação
+
+### 2. Sistema de Chat
+- Interface em tempo real
+- Formatação Markdown
+- Suporte a múltiplos tipos de mensagens
+- Visualização de cadeia de pensamento
+- Logs de API
+
+### 3. Gestão de Projetos
+- Múltiplos estágios de projeto
+- Timeline visual
+- Sistema de tarefas
+- Equipes virtuais
+
+## Fluxo de Trabalho
+
+### 1. Criação do Projeto
+1. Definição do problema
+2. Análise inicial pelo Arquiteto AI
+3. Planejamento de fases
+4. Configuração da metodologia
+
+### 2. Montagem da Equipe
+1. Análise de necessidades
+2. Seleção de agentes
+3. Configuração de personalidades
+4. Definição de objetivos
+
+### 3. Desenvolvimento
+1. Sprints iterativos
+2. Revisões contínuas
+3. Ajustes de estratégia
+4. Documentação automática
+
+### 4. Entrega
+1. Validação final
+2. Documentação completa
+3. Empacotamento
+4. Deployment
+
+## Estágios do Projeto
+
 1. **Aguardando Planejamento (Empty)**
-   - Estado inicial após a criação do projeto
-   - Apenas informações básicas definidas
-   - Aguardando interação com o Arquiteto AI
+   - Estado inicial após criação
+   - Aguardando análise do Arquiteto AI
 
 2. **Planejado (Planned)**
-   - Projeto analisado pelo Arquiteto AI
-   - Metodologia e fases definidas
-   - Requisitos iniciais documentados
-   - Plano de ação estabelecido
+   - Projeto analisado
+   - Metodologia definida
+   - Requisitos documentados
 
 3. **Recrutando Equipe (Recruiting)**
-   - Seleção de agentes AI especializados
-   - Definição de papéis e responsabilidades
-   - Configuração de personalidades dos agentes
+   - Seleção de agentes
+   - Definição de papéis
+   - Configuração de personalidades
 
 4. **Pronto para Iniciar (Ready)**
-   - Equipe completa e configurada
-   - Backlog inicial criado
-   - Metodologia e processos definidos
+   - Equipe completa
+   - Backlog criado
+   - Processos definidos
 
 5. **Em Andamento (Ongoing)**
-   - Execução ativa das tarefas
+   - Execução ativa
    - Interações entre agentes
    - Desenvolvimento iterativo
-   - Documentação contínua
 
 6. **Concluído (Completed)**
    - Objetivos alcançados
    - Documentação finalizada
    - Resultados validados
-   - Lições aprendidas registradas
 
-### O Arquiteto AI
+## Tecnologias e Dependências
 
-O Arquiteto AI é o componente central e mais sofisticado da plataforma, responsável por:
+### Core
+- React 18.3.1
+- TypeScript 5.5.3
+- Vite 5.4.2
+- Tailwind CSS 3.4.1
 
-#### 1. Análise e Planejamento
-- **Compreensão do Problema**
-  - Análise profunda do problema apresentado
-  - Identificação de requisitos implícitos
-  - Avaliação de complexidade e riscos
+### Integrações
+- OpenAI API
+- IndexedDB (idb 8.0.0)
+- Lucide React 0.344.0
 
-- **Definição de Estratégia**
-  - Escolha da metodologia apropriada
-  - Estruturação das fases do projeto
-  - Definição de marcos e entregáveis
+### Desenvolvimento
+- ESLint 9.9.1
+- PostCSS 8.4.35
+- Autoprefixer 10.4.18
 
-#### 2. Gestão de Equipe
-- **Composição da Equipe**
-  - Seleção de agentes AI especializados
-  - Definição de papéis e responsabilidades
-  - Configuração de personalidades
+## Configuração do Ambiente
 
-- **Coordenação**
-  - Facilitação da comunicação entre agentes
-  - Resolução de conflitos
-  - Alinhamento de objetivos
+### Requisitos
+- Node.js 18+
+- NPM 9+
 
-#### 3. Supervisão Técnica
-- **Qualidade**
-  - Revisão de entregas
-  - Garantia de padrões
-  - Validação de soluções
+### Instalação
+```bash
+# Instalar dependências
+npm install
 
-- **Orientação**
-  - Mentoria para a equipe
-  - Sugestões de melhorias
-  - Compartilhamento de boas práticas
+# Iniciar ambiente de desenvolvimento
+npm run dev
 
-### Fases do Projeto
+# Build para produção
+npm run build
+```
 
-#### 1. Fase de Descoberta
-- **Objetivos**
-  - Entender profundamente o problema
-  - Identificar stakeholders
-  - Mapear requisitos iniciais
+### Variáveis de Ambiente
+```env
+OPENAI_API_KEY=sk-xxx    # Chave da API OpenAI
+ANTHROPIC_API_KEY=sk-xxx # Chave da API Anthropic (futura)
+GEMINI_API_KEY=xxx      # Chave da API Google Gemini (futura)
+GROQ_API_KEY=gsk-xxx    # Chave da API Groq (futura)
+```
 
-- **Atividades**
-  - Entrevistas com stakeholders
-  - Análise de contexto
-  - Pesquisa de mercado
-  - Definição de escopo
+## Contribuição
 
-#### 2. Fase de Definição
-- **Objetivos**
-  - Estruturar a solução
-  - Definir arquitetura
-  - Estabelecer critérios de sucesso
+### Padrões de Código
+- ESLint para linting
+- Prettier para formatação
+- TypeScript strict mode
+- Commits semânticos
 
-- **Atividades**
-  - Design da solução
-  - Prototipação
-  - Validação de conceitos
-  - Planejamento técnico
+### Fluxo de Trabalho
+1. Fork do repositório
+2. Criar branch feature/fix
+3. Desenvolver e testar
+4. Criar Pull Request
 
-#### 3. Fase de Desenvolvimento
-- **Objetivos**
-  - Implementar a solução
-  - Validar incrementalmente
-  - Documentar processo
+## Roadmap
 
-- **Atividades**
-  - Desenvolvimento iterativo
-  - Testes contínuos
-  - Integração de componentes
-  - Revisões técnicas
+### Curto Prazo
+- [ ] Implementação completa do Arquiteto AI
+- [ ] Sistema de chat aprimorado
+- [ ] Gestão de equipe AI
 
-#### 4. Fase de Validação
-- **Objetivos**
-  - Testar a solução
-  - Coletar feedback
-  - Refinar implementação
+### Médio Prazo
+- [ ] Integrações com mais provedores de IA
+- [ ] Sistema de templates de projeto
+- [ ] Análise avançada de dados
 
-- **Atividades**
-  - Testes de aceitação
-  - Validação com usuários
-  - Ajustes e correções
-  - Documentação final
-
-[... resto do documento continua igual ...]
+### Longo Prazo
+- [ ] Recursos enterprise
+- [ ] Marketplace de agentes AI
+- [ ] Integração com CI/CD
